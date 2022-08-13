@@ -4,7 +4,11 @@ const client = new Client();
 console.log("Loading, this may take up to 10 seconds...");
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}`);
-    client.user.setStatus(config.status);
-    client.user.setActivity(config.activity);
+    if(Boolean(config.status)){
+        client.user.setStatus(config.status);
+    }
+    if(Boolean(config.activity)){
+        client.user.setActivity(config.activity);
+    }
 });
 client.login(config.token)

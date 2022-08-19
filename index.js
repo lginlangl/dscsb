@@ -4,7 +4,7 @@ const client = new Client();
 console.log("Loading, this may take up to 10 seconds...");
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}`);
-    if(Boolean(config.activity)){
+    if(config.activity){
         client.user.setActivity(config.activity);
     }
 });

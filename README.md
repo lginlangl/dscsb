@@ -13,3 +13,8 @@ USING THIS REPOSITORY IS A RISK YOU DECIDE TO MAKE. I (ginlang) AM NOT RESPONSIB
 4. Configure the rest of the config.json as you please
 5. To actually run this program, make sure you have node.js installed, and run `npm i` in the repository's root directory.
 6. Finally, you should now be able to simply run `node .` and the program should work.
+## Configuration
+1. Token (your token, duhh.)
+2. Activity (what will be shown as your status, e.g "playing Grand Theft Auto VI")
+3. Type (the type of activity, e.g "competing in Grand Theft Auto VI", valid types are PLAYING, WATCHING, STREAMING, LISTENING and COMPETING)
+4. URL (this is only useful if you are using the STREAMING type, the "Watch on Twitch" button will redirect to this URL)

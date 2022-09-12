@@ -5,10 +5,7 @@ console.log(`Loading dscsb with config Activity: ${config.activity}, Type: ${con
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}`);
     if(config.activity){
-        if(config.type = "STREAMING"){
-            client.user.setActivity(config.activity,{type: "STREAMING", url: (config.url)});
-        }
-        client.user.setActivity(config.activity,{type: (config.type)});
+      client.user.setActivity(config.activity,{type: config.type, url: (config.type === "STREAMING") ? config.url : null});
     }
 });
 client.login(config.token)

@@ -1,3 +1,5 @@
+# Project Archived.
+This project was archived because there is nothing else I need to add, the project is complete.
 # dscsb
 Simple Discord selfbot for editing your game activity
 ## WARNING
